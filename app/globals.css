@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+body {
+  background-color: #f7f5f0;
+  color: #1c2321;
+}
+
+::selection {
+  background-color: #2e6f5e;
+  color: #f7f5f0;
+}
+
+input:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #2e6f5e;
+  outline-offset: 2px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #dedacf;
+  border-radius: 10px;
+}
+
+.btn-primary {
+  background-color: #2e6f5e;
+  color: #f7f5f0;
+  border-radius: 8px;
+  padding: 0.55rem 1.1rem;
+  font-weight: 600;
+  transition: background-color 0.15s ease;
+}
+.btn-primary:hover {
+  background-color: #24594b;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #1c2321;
+  border: 1px solid #dedacf;
+  border-radius: 8px;
+  padding: 0.55rem 1.1rem;
+  font-weight: 600;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+.btn-secondary:hover {
+  background-color: #efece3;
+}
+
+.btn-danger {
+  background-color: transparent;
+  color: #b5452f;
+  border: 1px solid #e2c3b8;
+  border-radius: 8px;
+  padding: 0.4rem 0.9rem;
+  font-weight: 600;
+}
+.btn-danger:hover {
+  background-color: #fbf0ed;
+}
+
+.input {
+  width: 100%;
+  border: 1px solid #dedacf;
+  border-radius: 8px;
+  padding: 0.55rem 0.75rem;
+  background: #ffffff;
+  font-size: 0.95rem;
+}
+.input:focus {
+  border-color: #2e6f5e;
+}
+
+label.field-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #5b6664;
+  text-transform: uppercase;
+}
